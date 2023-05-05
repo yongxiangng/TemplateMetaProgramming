@@ -7,6 +7,9 @@
 
 #include <type_traits>
 
+namespace Reverse_Reverse
+{
+
 template <int... Vals>
 struct Vec;
 
@@ -26,5 +29,7 @@ struct Reverse<Vec<>, Out>
 };
 
 static_assert(std::is_same_v<Vec<1, 2, 3, 4>, Reverse<Vec<4, 3, 2, 1>>::Type>);
+
+}
 
 #endif //TEMPLATEMETAPROGRAMMING_REVERSE_H

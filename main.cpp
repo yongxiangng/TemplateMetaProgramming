@@ -1,3 +1,4 @@
+#include "Prime/Prime.h"
 #include "Reverse/Reverse.h"
 #include "Sort/Sort.h"
 #include "Unique/Unique.h"

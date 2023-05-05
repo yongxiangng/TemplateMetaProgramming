@@ -7,6 +7,9 @@
 
 #include <cstddef>
 
+namespace Sort_Sort
+{
+
 template <int... Vals>
 struct Vec;
 
@@ -119,5 +122,7 @@ static_assert(std::is_same_v<Sort<Vec<3, 1, 4, 1, 5, 9, 2, 6>>::Type, Vec<1, 1, 
 static_assert(std::is_same_v<Sort<Vec<-3, -1, -4, -1, -5, -9, -2, -6>>::Type, Vec<-9, -6, -5, -4, -3, -2, -1, -1>>);
 static_assert(std::is_same_v<Sort<Vec<>>::Type, Vec<>>);
 static_assert(std::is_same_v<Sort<Vec<1>>::Type, Vec<1>>);
+
+}
 
 #endif //TEMPLATEMETAPROGRAMMING_SORT_H
