@@ -1,5 +1,6 @@
-#include "Unique/Unique.h"
 #include "Reverse/Reverse.h"
+#include "Sort/Sort.h"
+#include "Unique/Unique.h"
 
 #include <iostream>
 
