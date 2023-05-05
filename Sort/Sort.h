@@ -107,10 +107,12 @@ struct Sort<Vec<vals...>>
 };
 
 static_assert(std::is_same_v<Merge<Vec<1, 3, 5>, Vec<2, 4>>::Type, Vec<1, 2, 3, 4, 5>>);
+static_assert(std::is_same_v<Merge<Vec<>, Vec<>>::Type, Vec<>>);
 
 static_assert(std::is_same_v<Split<Vec<1, 2, 3, 4, 5>, 0, 0>::Type, Vec<>>);
 static_assert(std::is_same_v<Split<Vec<1, 2, 3, 4, 5>, 0, 3>::Type, Vec<1, 2, 3>>);
 static_assert(std::is_same_v<Split<Vec<1, 2, 3, 4, 5>, 2, 3>::Type, Vec<3>>);
+static_assert(std::is_same_v<Split<Vec<>, 2, 3>::Type, Vec<>>);
 
 static_assert(std::is_same_v<Sort<Vec<1, 4>>::Type, Vec<1, 4>>);
 static_assert(std::is_same_v<Sort<Vec<3, 1, 4, 1, 5, 9, 2, 6>>::Type, Vec<1, 1, 2, 3, 4, 5, 6, 9>>);
