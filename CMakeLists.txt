@@ -3,4 +3,4 @@ project(TemplateMetaProgramming)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(TemplateMetaProgramming main.cpp Unique/Unique.h Reverse/Reverse.h Sort/Sort.h Prime/Prime.h)
+add_executable(TemplateMetaProgramming main.cpp Unique/Unique.h Reverse/Reverse.h Sort/Sort.h Prime/Prime.h Transform/Transform.h)

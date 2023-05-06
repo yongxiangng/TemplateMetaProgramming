@@ -1,6 +1,7 @@
 #include "Prime/Prime.h"
 #include "Reverse/Reverse.h"
 #include "Sort/Sort.h"
+#include "Transform/Transform.h"
 #include "Unique/Unique.h"
 
 #include <iostream>
